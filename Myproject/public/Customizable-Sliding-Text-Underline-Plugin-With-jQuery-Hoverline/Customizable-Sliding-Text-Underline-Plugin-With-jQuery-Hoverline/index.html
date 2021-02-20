@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="./css/style.css" rel="stylesheet"/>
+	
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="./scripts/hoverline.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+	$('.navbar').makeNavbar();
+	/*$('.navbar').hoverline({
+		  'color'       		:		'#CCC',
+		  'height'				:		'2px',
+		  'start'				:		'2',
+		  'speed'				:		'500',
+		  'border'				:		'none',
+		  'borderwidthside'		:		'1px',
+		  'borderwidthtop'		:		'1px',
+		  'borderstyle'			:		'solid'
+	});*/
+	$('#nav1').hoverline();
+	$('#nav2').hoverline({'start' : '3'});
+	$('#nav3').hoverline({'color' : 'red'});
+	$('#nav4').hoverline({'speed' : '1000'});
+	$('#nav5').hoverline({'height': '5px'});
+	$('#nav6').hoverline({
+	  'border'		:	'red',
+	  'borderwidthside'	:	'1px',
+	  'borderwidthtop'	:	'1px',
+	  'borderstyle'		:	'solid'
+	});
+});
+	</script>
+<title>jQuery Hoverline Plugin Demos</title>
+</head>
+
+<body>
+		<div id="outer-wrap">
+
+<h1>jQuery Hoverline Plugin Demos</h1>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="example" id="ex1">
+	<h2>Example 1 : <span class="desc">Default Values</span></h2>
+	<div class="ex-inner"><div class="navbar" id="nav1">
+		<ul>
+			<li><a href="#ex1">Home</a></li>
+			<li><a href="#ex1">Blog</a></li>
+			<li><a href="#ex1">Portfolio</a></li>
+			<li><a href="#ex1">Projects</a></li>
+			<li><a href="#ex1">Design</a></li>
+		</ul>
+	</div>	<!-- Navbar -->
+	<div id="code">
+<pre>
+	$('#nav1').hoverline();
+</pre>
+	</div></div>
+</div>	<!--Example -->
+
+<div class="example" id="ex2">
+	<h2>Example 2 : <span class="desc">Changing First Page</span></h2>
+	<div class="ex-inner"><div class="navbar" id="nav2">
+		<ul>
+			<li><a href="#ex2">Home</a></li>
+			<li><a href="#ex2">Blog</a></li>
+			<li><a href="#ex2">Portfolio</a></li>
+			<li><a href="#ex2">Projects</a></li>
+			<li><a href="#ex2">Design</a></li>
+		</ul>
+	</div>	<!-- Navbar -->
+	<div id="code">
+<pre>
+	$('#nav2').hoverline({'start' : '3'});
+</pre>
+	</div></div>
+</div>	<!--Example -->
+
+
+<div class="example" id="ex3">
+	<h2>Example 3 : <span class="desc">Changing Color</span></h2>
+	<div class="ex-inner"><div class="navbar" id="nav3">
+		<ul>
+			<li><a href="#ex3">Home</a></li>
+			<li><a href="#ex3">Blog</a></li>
+			<li><a href="#ex3">Portfolio</a></li>
+			<li><a href="#ex3">Projects</a></li>
+			<li><a href="#ex3">Design</a></li>
+		</ul>
+	</div>	<!-- Navbar -->
+	<div id="code">
+<pre>
+	$('#nav3').hoverline({'color' : 'red'});
+</pre>
+	</div></div>
+</div>	<!--Example -->
+
+
+<div class="example" id="ex4">
+	<h2>Example 4 : <span class="desc">Changing Speed of Animation</span></h2>
+	<div class="ex-inner"><div class="navbar" id="nav4">
+		<ul>
+			<li><a href="#ex4">Home</a></li>
+			<li><a href="#ex4">Blog</a></li>
+			<li><a href="#ex4">Portfolio</a></li>
+			<li><a href="#ex4">Projects</a></li>
+			<li><a href="#ex4">Design</a></li>
+		</ul>
+	</div>	<!-- Navbar -->
+	<div id="code">
+<pre>
+	$('#nav4').hoverline({'speed' : '1000'});
+</pre>
+	</div></div>
+</div>	<!--Example -->
+
+<div class="example" id="ex5">
+	<h2>Example 5 : <span class="desc">Changing the Height</span></h2>
+	<div class="ex-inner"><div class="navbar" id="nav5">
+		<ul>
+			<li><a href="#ex5">Home</a></li>
+			<li><a href="#ex5">Blog</a></li>
+			<li><a href="#ex5">Portfolio</a></li>
+			<li><a href="#ex5">Projects</a></li>
+			<li><a href="#ex5">Design</a></li>
+		</ul>
+	</div>	<!-- Navbar -->
+	<div id="code">
+<pre>
+	$('#nav5').hoverline({'height': '5px'});
+</pre>
+	</div></div>
+</div>	<!--Example -->
+
+<div class="example" id="ex6">
+	<h2>Example 6 : <span class="desc">Setting Border</span></h2>
+	<div class="ex-inner"><div class="navbar" id="nav6">
+		<ul>
+			<li><a href="#ex6">Home</a></li>
+			<li><a href="#ex6">Blog</a></li>
+			<li><a href="#ex6">Portfolio</a></li>
+			<li><a href="#ex6">Projects</a></li>
+			<li><a href="#ex6">Design</a></li>
+		</ul>
+	</div>	<!-- Navbar -->
+	<div id="code">
+<pre>
+	$('#nav6').hoverline({
+	  'border'		:	'red',
+	  'borderwidthside'	:	'1px',
+	  'borderwidthtop'	:	'1px',
+	  'borderstyle'		:	'solid'
+	});
+</pre>
+	</div></div>
+</div>	<!--Example -->
+
+
+		</div>	<!-- Outer Wrap -->
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

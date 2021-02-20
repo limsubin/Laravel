@@ -1,0 +1,22 @@
+.menu li {
+    float: left;
+    list-style:none;
+    position: relative;
+  }
+
+  .menu li:hover>a { color:#FF8080; }
+  .menu a {
+    color: white;
+    display: block;
+    padding: 8px 0px;
+    text-decoration: none;
+  }
+  .menu ul {
+    background: #D4CEDE;
+    display: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+  }
